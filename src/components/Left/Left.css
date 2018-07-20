@@ -27,7 +27,7 @@ p {
     font-size:63%;
     margin: 0 auto;
 }
-
+.name { font-size:100%;}
 .tel { font-size:82%;}
 .email { font-size:70%;}
 .languages {font-size:85%;}
