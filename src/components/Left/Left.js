@@ -11,14 +11,14 @@ const labelStyle = {fontWeight:"lighter", color:"#9e9e9e"}
         return (
         <div className = "left">
         
-                <img alt="MyPhoto"src ={me} />
+                <img class="myphoto"alt="MyPhoto"src ={me} />
                 
            <div className = "contact">
-           <p className = "name">Hi, I am Hovhannes</p>
+           <p className = "name">Hi, I am Hovhannes.<br/> Welcome to my <br/>ineractive profile !</p>
                 <p className="tel"><span style={labelStyle}>Tel: </span>438-825-1410  </p> 
                 <p className="email"><span style={labelStyle}>E-mail: </span><br />h.hambardzumyan@gmail.com </p> 
                 <p> <span style={labelStyle}>LinkedIn:</span><br />linkedin.com/in/hhambardzumyan/</p><br />
-                <p className="languages"> <span style={labelStyle}>Languages spoken:</span><br />English, French, Russian, Armenian</p><br />
+                
                 <button id="positiveBtn" onClick = {props.button}>Positive button</button>
            </div>
         </div>);

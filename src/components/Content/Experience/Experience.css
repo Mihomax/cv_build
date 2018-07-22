@@ -5,9 +5,19 @@ h1 {
 
 .main {
     font-family: 'Open Sans', sans-serif;
-    
     float:left;
     margin-bottom:20px;
+    border-bottom:1px solid lightgrey;
+    
+}
+
+.main h1 {
+    text-align: left;
+    float:left;
+}
+
+.final {
+    border-bottom:none;
 }
 
 
@@ -20,15 +30,19 @@ h3 {
 }
 
 h4 {
-    margin:2px;
+    margin:3px;
     float:left;
     text-align:left;
+}
+
+.lastline {
+    margin-bottom:30px;
 }
 
 
 h5 {
    
-    color:#EA4335;
+    color:#9e9e9e;
     margin-top:20px;
     margin-bottom:0px;
     float:none;
@@ -37,6 +51,7 @@ h5 {
 
 span {
     font-size:130%;
+    color:#424242;
 }
 
 a {
@@ -44,3 +59,20 @@ a {
     color:#4285F4;
 }
 
+
+.hr3 {
+    border-color:#EA4335;
+}
+
+
+.date {
+    float:right;
+    text-align:right;
+    font-size:90%;
+    color:#9e9e9e;
+}
+
+.logos {
+    width:100px;
+    
+}
