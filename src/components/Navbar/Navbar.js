@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import './Navbar.css';
 
 
@@ -24,11 +24,12 @@ class Navbar extends Component {
     render() {
    return ( <nav >
         <div className = "linkContainer">
-        <Link  className = "links home active" to={'/'}><i className="material-icons ">home</i></Link>
-        <Link className = "links work" to={'/experience'}><i className="material-icons ">work</i></Link>
-        <Link className = "links school" to={'/education'}><i className="material-icons ">school</i></Link>      
-        <Link className = "links face" to={'/activities'}><i className="material-icons ">face</i></Link>      
-        <Link className = "links mood" to={'/positive'}><i className="material-icons ">mood</i></Link>      
+       
+        <NavLink className = "links home active" exact={true} activeClassName='is-active' to={'/'}><i className="material-icons ">home</i></NavLink>
+        <NavLink className = "links work" exact={true} activeClassName='is-active' to={'/experience'}><i className="material-icons ">work</i></NavLink>
+        <NavLink className = "links school" exact={true} activeClassName='is-active' to={'/education'}><i className="material-icons ">school</i></NavLink>      
+        <NavLink className = "links face" exact={true} activeClassName='is-active' to={'/activities'}><i className="material-icons ">face</i></NavLink>      
+        <NavLink className = "links mood" exact={true} activeClassName='is-active' to={'/positive'}><i className="material-icons ">mood</i></NavLink>      
         </div>
     </nav>
 );

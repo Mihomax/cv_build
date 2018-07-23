@@ -24,7 +24,7 @@ nav {
     border-bottom: 3px solid lightgrey;
     
 }
-Link:active {
+.is-active {
     border-bottom: 3px solid #4285F4;
 }
 
