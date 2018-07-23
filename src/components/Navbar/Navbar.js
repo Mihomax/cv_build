@@ -1,14 +1,30 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import './Navbar.css';
 
 
+class Navbar extends Component {
+    constructor() {
+        super();
+        this.underlined= this.underlined.bind(this);
+        this.state = { 
+            home:"3px solid #4285F4",
+            experience:"",
+            education:"",
+            activities:"",
+            positive:""
+        };
+        this.status = {home:{borderBottom:""}};
+    }
+     underlined = () => {
+        
+        this.status.home={borderBottom:"3px solid #4285F4"};
+    };
 
-
-const navbar = () => (
-    <nav >
+    render() {
+   return ( <nav >
         <div className = "linkContainer">
-        <Link className = "links home" to={'/'}><i className="material-icons ">home</i></Link>
+        <Link  className = "links home active" to={'/'}><i className="material-icons ">home</i></Link>
         <Link className = "links work" to={'/experience'}><i className="material-icons ">work</i></Link>
         <Link className = "links school" to={'/education'}><i className="material-icons ">school</i></Link>      
         <Link className = "links face" to={'/activities'}><i className="material-icons ">face</i></Link>      
@@ -16,5 +32,7 @@ const navbar = () => (
         </div>
     </nav>
 );
+}
+}
 
-export default navbar;
+export default Navbar;
