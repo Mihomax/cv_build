@@ -8,8 +8,8 @@
     float:left;
     border-right:1px solid lightgrey;
     font-size: 125%;
-    background-color:#D3D3D3;
-    
+    background-color:white;
+    box-shadow: 2px 2px 4px lightgrey;
 }
 .label {
     color:red;
