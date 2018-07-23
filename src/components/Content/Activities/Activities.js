@@ -15,7 +15,7 @@ const activities = () => {
 
         <h3 className = "lastline"><span style={labelStyle}>Who am I as a person ? </ span> <br /> 
         I think my previous collegues or bosses would describe me as organised, fast learner, analytical 
-        and reliable team player.</h3>
+        and reliable team player. </h3>
 
         <h3 className = "lastline"><span style={labelStyle}>Who am I out of work ? </ span> <br /> 
         I like to do sport - squash, volleyball, table tennis(ninja level), <br /> 

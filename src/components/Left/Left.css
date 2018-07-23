@@ -1,4 +1,5 @@
 .left {
+    position:fixed;
     font-family: 'Open Sans', sans-serif;
     font-weight:bold;
     color:#424242 ;
@@ -7,6 +8,7 @@
     float:left;
     border-right:1px solid lightgrey;
     font-size: 125%;
+    background-color:#D3D3D3;
     
 }
 .label {
@@ -34,7 +36,7 @@ p {
 }
 .tel { font-size:82%;}
 .email { font-size:70%;}
-.languages {font-size:85%;}
+
 
 button {
     display: block;
@@ -90,12 +92,29 @@ button:hover {
   }
 
   @media only screen and (max-width: 600px) {
+
+    .left {
+        
+       
+        height:140px;
+       
+        
+    }
     
     .myphoto { 
         float:left;
-        padding:20px;
-        width:100px;
-    height:100px;
+        padding:10px;
+        width:90px;
+        height:90px;
+        
+    }
+
+    .name {
+        font-size:70%;
+        margin-bottom:0px;
+    }
+    .email,.tel, .linkedin {
+        font-size:60%;
     }
     button {
        

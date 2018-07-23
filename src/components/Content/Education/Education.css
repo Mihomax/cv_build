@@ -4,3 +4,12 @@
 .educ {
     width:700px;
 }
+
+@media only screen and (max-width: 1100px) {
+    .big {
+        width:100px;
+    }
+    .educ {
+        width:550px;
+    }
+  }
